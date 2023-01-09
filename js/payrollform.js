@@ -86,11 +86,15 @@ const save=(event)=>{
         //major refactoring of code is done here to to save updated employees
         //calling set employeepayroll object which adds value in payroll form to employee payroll obj json
         setEmployeePayrollObject(); 
-        //after adding values, create and update storage is called where values are added into local storage or updated
-        createAndUpdateStorage();
-        resetForm();
-        //after resetting, moving back to home page.
-        window.location.replace(site_properties.home_page);
+        if(site_properties.use_local_storage.match("true"))
+        {
+            //after adding values, create and update storage is called where values are added into local storage or updated
+            createAndUpdateStorage();
+            resetForm();
+            //after resetting, moving back to home page.
+            window.location.replace(site_properties.home_page);
+        }
+        else createOrUpdateEmployeePayroll();
     }
     catch(e)
     {
