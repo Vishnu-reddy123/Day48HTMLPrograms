@@ -1,0 +1,72 @@
+{
+  "employee": [
+    {
+      "id": "4",
+      "name": "Ramesh",
+      "gender": "Male",
+      "salary": "950000"
+    },
+    {
+      "name": "Rahul",
+      "salary": "800000",
+      "id": "EVoOGPm"
+    },
+    {
+      "name": "Rahul",
+      "salary": "800000",
+      "id": "0sQyRIF"
+    },
+    {
+      "_name": "Vishnu Reddy",
+      "_gender": "Male",
+      "_department": [
+        "IT",
+        "DevOps Engineer"
+      ],
+      "_salary": "500000",
+      "_startDate": "20 Aug 2022",
+      "_note": "",
+      "_profilePic": "../assets/profile-images/Ellipse -6.png",
+      "id": "R9UOILD"
+    },
+    {
+      "_name": "Vishnu Reddy",
+      "_gender": "Male",
+      "_department": [
+        "IT",
+        "DevOps Engineer"
+      ],
+      "_salary": "500000",
+      "_startDate": "20 Aug 2022",
+      "_note": "",
+      "_profilePic": "../profilePic/Ellipse -6.png",
+      "id": "xJhGLZO"
+    },
+    {
+      "_name": "Vishnu Reddy",
+      "_gender": "Male",
+      "_department": [
+        "IT",
+        "DevOps Engineer"
+      ],
+      "_salary": "500000",
+      "_startDate": "20 Aug 2022",
+      "_note": "",
+      "_profilePic": "../profilePic/Ellipse -6.png",
+      "id": "z-HinCc"
+    },
+    {
+      "_name": "Vishnu Reddy",
+      "_gender": "Male",
+      "_department": [
+        "IT",
+        "DevOps Engineer"
+      ],
+      "_salary": "500000",
+      "_startDate": "20 Aug 2022",
+      "_note": "",
+      "_profilePic": "../profilePic/Ellipse -6.png",
+      "id": "zNYKMda"
+    }
+  ]
+}
