@@ -130,11 +130,27 @@ const createEmployeePayrollJSON = () => {
       const index= empPayrollList.map(empData=>empData.id).indexOf(empPayrollData.id);
       //using splice to remove element from array
       empPayrollList.splice(index,1);
+      if(site_properties.use_local_storage.match("true"))
+      {
       //updating the data into local storage
       localStorage.setItem("EmployeePayrollList",JSON.stringify(empPayrollList));
       //updating the count of employees here, otherwise refresh will be required to update count
       //refresh slows the code, hence update of count is done here only.
       document.querySelector(".emp-count").textContent= empPayrollList.length;
+    }
+    else
+    {
+        const deleteURL= site_properties.server_url+empPayrollData.id.toString();
+        makeServiceCall("DELETE",deleteURL,false)
+        .then(responseText=>
+          {
+              document.querySelector(".emp-count").textContent= empPayrollList.length;
+              createInnerHtml();
+          })
+          .catch(error=>{
+              console.log("DELETE Error status: "+JSON.stringify(error));
+          })
+    }
       //showing updated data of local storage
       createInnerHtml();
   }
